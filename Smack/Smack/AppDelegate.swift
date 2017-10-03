@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Smack
+//  smack
 //
 //  Created by Nadia on 10/2/17.
 //  Copyright © 2017 Nadia. All rights reserved.
