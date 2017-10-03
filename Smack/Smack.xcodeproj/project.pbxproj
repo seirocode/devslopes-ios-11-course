@@ -11,6 +11,9 @@
 		05406CD21F834E93001C57C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05406CD01F834E93001C57C5 /* Main.storyboard */; };
 		05406CD41F834E93001C57C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05406CD31F834E93001C57C5 /* Assets.xcassets */; };
 		05406CD71F834E93001C57C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05406CD51F834E93001C57C5 /* LaunchScreen.storyboard */; };
+		058EFB351F83778300F08A36 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058EFB341F83778300F08A36 /* ChatVC.swift */; };
+		058EFB391F8377B700F08A36 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058EFB381F8377B700F08A36 /* ChannelVC.swift */; };
+		058EFB3A1F837CEB00F08A36 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 058EFB2E1F8371A200F08A36 /* SWRevealViewController.m */; };
 		2379F5632085A8CD93ABC3FB /* Pods_smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C12BD32244691A4B6F727A92 /* Pods_smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,8 @@
 		058EFB2C1F8371A100F08A36 /* smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		058EFB2D1F8371A200F08A36 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		058EFB2E1F8371A200F08A36 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		058EFB341F83778300F08A36 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		058EFB381F8377B700F08A36 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		1B72B4C6CFFB18EDFB9E5976 /* Pods-smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.release.xcconfig"; sourceTree = "<group>"; };
 		315B1F3E17A0C9AFF496538A /* Pods-smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smack/Pods-smack.debug.xcconfig"; sourceTree = "<group>"; };
 		C12BD32244691A4B6F727A92 /* Pods_smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +67,9 @@
 		05406CCB1F834E93001C57C5 /* smack */ = {
 			isa = PBXGroup;
 			children = (
+				058EFB331F83775C00F08A36 /* Model */,
+				058EFB321F83775600F08A36 /* View */,
+				058EFB311F83774800F08A36 /* Controller */,
 				058EFB2B1F83717E00F08A36 /* Supporting Files */,
 				05406CCC1F834E93001C57C5 /* AppDelegate.swift */,
 				05406CD01F834E93001C57C5 /* Main.storyboard */,
@@ -80,6 +88,29 @@
 				058EFB2C1F8371A100F08A36 /* smack-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		058EFB311F83774800F08A36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				058EFB341F83778300F08A36 /* ChatVC.swift */,
+				058EFB381F8377B700F08A36 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		058EFB321F83775600F08A36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		058EFB331F83775C00F08A36 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		4EA63F14AC1BEA858D803527 /* Pods */ = {
@@ -223,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				058EFB391F8377B700F08A36 /* ChannelVC.swift in Sources */,
+				058EFB351F83778300F08A36 /* ChatVC.swift in Sources */,
 				05406CCD1F834E93001C57C5 /* AppDelegate.swift in Sources */,
+				058EFB3A1F837CEB00F08A36 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +403,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.seirocode.smack-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "smack/Supporting Files/smack-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/Socket.IO-Client-Swift/Source/SocketIO/Util/SocketStringReader.swift"
-            timestampString = "528708553.646082"
+            timestampString = "528709880.584848"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
